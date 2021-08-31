@@ -1,0 +1,94 @@
+body {
+  background-color: #FCE372;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.whatstaysheader {
+  font-family: monospace;
+  font-weight: 2000;
+  white-space: pre-wrap;
+  color: white;
+  --animate-duration: 2s;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* justify-content: space-around; */
+}
+
+.centered {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tuscany-pink {
+  /* background-color: #CCA69A; */
+  margin: 10px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: 600px 350px;
+  background-position: center;
+  /* background-color: blue; */
+  background-blend-mode: difference;
+  color: white;
+  font-family: monospace;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 40px
+}
+
+/* .static-border {
+  background-color: black;
+  padding: 10px;
+} */
+
+#aboutWhatStays {
+    background-image: url("../imgs/tea1.jpg");
+    /* background-size: 550px 320px; */
+}
+
+#aboutKatiMalison {
+    background-image: url("../imgs/kati.jpeg");
+    background-size: 300px 400px;
+}
+
+#aboutRecordingProcess {
+    background-image: url("../imgs/recording.jpeg");
+}
+
+#videoMirrors {
+    background-image: url("../imgs/mirrors.jpeg");
+}
+
+#aspirations {
+    background-image: url("../imgs/aspirations.jpg");
+}
+
+#listenWhatStays {
+    background-image: url("../imgs/listen.jpeg");
+}
+
+#videoALight {
+    background-image: url("../imgs/alight.jpeg");
+}
+
+#lyricBook {
+    background-image: url("../imgs/lyricbook.jpeg");
+    background-size: 400px 400px;
+}
+.first-row, .second-row {
+  flex-grow: 1;
+}
+
+.what-stays {
+  flex-grow: 0
+}
