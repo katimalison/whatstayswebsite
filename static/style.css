@@ -1,12 +1,13 @@
 body {
-  background-color: #FCE372;
+  /* background-color: #FCE372; */
+  background-color: black;
   height: 100vh;
   min-height: 100vh;
 }
 
 .whatstaysheader {
   font-family: monospace;
-  font-weight: 2000;
+  font-weight: 3000;
   white-space: pre-wrap;
   color: white;
   --animate-duration: 2s;
@@ -29,15 +30,19 @@ body {
   justify-content: center;
 }
 
-.tuscany-pink {
+.selection-box {
   /* background-color: #CCA69A; */
   margin: 10px;
   padding: 10px;
+  border-style: solid;
+  border-width: 0px;
+  border-color: white;
+  transition: border-color 300ms;
   background-repeat: no-repeat;
   background-size: 600px 350px;
   background-position: center;
-  /* background-color: blue; */
-  background-blend-mode: difference;
+  background-color: #25292D;
+  background-blend-mode: overlay;
   color: white;
   font-family: monospace;
   font-weight: 400;
@@ -46,42 +51,60 @@ body {
   padding-top: 40px
 }
 
+/* .my-element {
+  border-bottom: 1px solid transparent;
+  transition: border-color 300ms;
+}
+
+.selection-box:active {
+  border-color: white;
+} */
+
+.box-text {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);;
+  display: block;
+}
+.box-text-idle {
+  display: flex;
+}
+
 /* .static-border {
   background-color: black;
   padding: 10px;
 } */
 
-#aboutWhatStays {
+#aboutWhatStays-box {
     background-image: url("../imgs/tea1.jpg");
     /* background-size: 550px 320px; */
 }
 
-#aboutKatiMalison {
+#aboutKatiMalison-box {
     background-image: url("../imgs/kati.jpeg");
     background-size: 300px 400px;
 }
 
-#aboutRecordingProcess {
+#aboutRecordingProcess-box {
     background-image: url("../imgs/recording.jpeg");
 }
 
-#videoMirrors {
+#videoMirrors-box {
     background-image: url("../imgs/mirrors.jpeg");
 }
 
-#aspirations {
+#aspirations-box {
     background-image: url("../imgs/aspirations.jpg");
 }
 
-#listenWhatStays {
+#listenWhatStays-box {
     background-image: url("../imgs/listen.jpeg");
 }
 
-#videoALight {
+#videoALight-box {
     background-image: url("../imgs/alight.jpeg");
 }
 
-#lyricBook {
+#lyricBook-box {
     background-image: url("../imgs/lyricbook.jpeg");
     background-size: 400px 400px;
 }
@@ -89,6 +112,31 @@ body {
   flex-grow: 1;
 }
 
+.hidden-at-first {
+  height: 500px;
+  padding: 15px;
+  font-family: monospace;
+  font-size: 15px;
+  background-color: inherit;
+  /* white-space: pre-wrap; */
+  color: white;
+  display: flex;
+  align-self: stretch;
+  display: none;
+}
+
+.text-div {
+  white-space: pre-wrap;
+}
+
+/* .content-row {
+  flex-grow: 1;
+} */
+
 .what-stays {
   flex-grow: 0
+}
+
+.left-col, .center-col, .right-col {
+  flex-grow: 1;
 }
