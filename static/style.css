@@ -43,6 +43,7 @@ body {
   background-position: center;
   background-color: #25292D;
   background-blend-mode: overlay;
+  max-height: 350px;
   color: white;
   font-family: monospace;
   font-weight: 400;
