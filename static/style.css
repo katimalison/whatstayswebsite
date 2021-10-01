@@ -1,6 +1,6 @@
 body {
   /* background-color: #FCE372; */
-  background-color: black;
+  background-color: #FFF4C2;
   height: 100vh;
   min-height: 100vh;
 }
@@ -41,9 +41,10 @@ body {
   background-repeat: no-repeat;
   background-size: 600px 350px;
   background-position: center;
-  background-color: #25292D;
-  background-blend-mode: overlay;
-  color: white;
+  background-color: rgba(255,244,194, 0.4);
+  background-blend-mode:lighten;
+  max-height: 350px;
+  color: #f1c232;
   font-family: monospace;
   font-weight: 400;
   text-align: center;
@@ -62,7 +63,7 @@ body {
 
 .box-text {
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.7);;
+  background-color: rgba(255, 255, 255, 0.9);;
   display: block;
 }
 .box-text-idle {
@@ -110,6 +111,7 @@ body {
 }
 .first-row, .second-row {
   flex-grow: 1;
+  max-height: 400px;
 }
 
 .hidden-at-first {
@@ -119,7 +121,7 @@ body {
   font-size: 15px;
   background-color: inherit;
   /* white-space: pre-wrap; */
-  color: white;
+  color: #f1c232;
   display: flex;
   align-self: stretch;
   display: none;

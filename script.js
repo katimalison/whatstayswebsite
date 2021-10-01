@@ -17,7 +17,7 @@ $(document).ready(function() {
         // var random_color = colors[Math.floor(Math.random() * colors.length)];
         $(this).removeClass('animated pulse infinite');
         if (!$(this).data('clicked')) {
-         $(this).css({"background-color":"#343a40"});
+         $(this).css({"background-color":"rgba(255,244,194, 0.5)"});
          // $(this).find('.box-text').hide();
          // $(this).find('.box-text-background').show(300);
        }
@@ -48,14 +48,12 @@ $(document).ready(function() {
       function () {
         var colors = ['#ff0000', '#B35A42', '#0000ff'];
         var random_color = colors[Math.floor(Math.random() * colors.length)];
-         $(this).css({"color":'#ce4027'});
          $(this).addClass('animated pulse infinite');
       },
 
       function () {
         var colors = ['#ff0000', '#B35A42', '#0000ff'];
         var random_color = colors[Math.floor(Math.random() * colors.length)];
-         $(this).css({"color":'#B35A42'});
          $(this).removeClass('animated pulse infinite');
       }
    );
@@ -73,7 +71,7 @@ function closeThisThing(thing) {
   var thing_box = thing + '-box'
   $(thing).hide(500);
   $(thing_box).data('clicked', false)
-  $(thing_box).css({"background-color":"#343a40"});
+  $(thing_box).css({"background-color":"rgba(255,244,194, 0.5)"});
   $(thing_box).removeClass('animated pulse infinite');
 }
 
