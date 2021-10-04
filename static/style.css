@@ -101,6 +101,10 @@ body {
     background-image: url("../imgs/listen.jpeg");
 }
 
+#listenWhatStays {
+  display: block;
+}
+
 #videoALight-box {
     background-image: url("../imgs/alight.jpeg");
 }
@@ -108,12 +112,6 @@ body {
 #lyricBook-box {
     background-image: url("../imgs/lyricbook.jpeg");
     background-size: 400px 400px;
-}
-
-#videoMirrors {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .first-row, .second-row {
@@ -130,8 +128,14 @@ body {
   /* white-space: pre-wrap; */
   color: #f1c232;
   display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: stretch;
   display: none;
+}
+
+.hidden-at-first[style*='display: block']{
+    display: flex !important;
 }
 
 .text-div {
