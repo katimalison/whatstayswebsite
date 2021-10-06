@@ -101,10 +101,6 @@ body {
     background-image: url("../imgs/listen.jpeg");
 }
 
-#listenWhatStays {
-  display: block;
-}
-
 #videoALight-box {
     background-image: url("../imgs/alight.jpeg");
 }
@@ -140,6 +136,12 @@ body {
 
 .text-div {
   white-space: pre-wrap;
+}
+
+.multi-video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* .content-row {
