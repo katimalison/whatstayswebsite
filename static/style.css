@@ -120,14 +120,15 @@ body {
   padding: 15px;
   font-family: monospace;
   font-size: 15px;
-  background-color: inherit;
+  background-color: white;
   /* white-space: pre-wrap; */
   color: #f1c232;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   align-self: stretch;
   display: none;
+  overflow-y: scroll;
 }
 
 .hidden-at-first[style*='display: block']{
@@ -154,4 +155,10 @@ body {
 
 .left-col, .center-col, .right-col {
   flex-grow: 1;
+}
+
+.vimeo-container {
+  display: flex;
+  flex-direction: row;
+
 }
