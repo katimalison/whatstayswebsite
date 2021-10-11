@@ -1,230 +1,191 @@
 $(document).ready(function() {
 
-   $('.selection-box').hover(
+  $('.picture-box').hover(
 
-      function () {
-        // var colors = ['#ff0000', '#B35A42', '#0000ff'];
-        // var random_color = colors[Math.floor(Math.random() * colors.length)];
-         $(this).css({"background-color":'transparent'});
-         $(this).addClass('animated pulse infinite');
-         // $(this).find('.box-text-background').hide();
-         // $(this).find('.box-text').show(300);
+    function() {
+      // var colors = ['#ff0000', '#B35A42', '#0000ff'];
+      // var random_color = colors[Math.floor(Math.random() * colors.length)];
+      $(this).css({
+        "background-color": 'transparent'
+      });
+      $(this).addClass('animated pulse infinite');
+      // $(this).find('.box-text-background').hide();
+      // $(this).find('.box-text').show(300);
 
-      },
+    },
 
-      function () {
-        // var colors = ['#ff0000', '#B35A42', '#0000ff'];
-        // var random_color = colors[Math.floor(Math.random() * colors.length)];
-        $(this).removeClass('animated pulse infinite');
-        if (!$(this).data('clicked')) {
-         $(this).css({"background-color":"rgba(255,244,194, 0.5)"});
-         // $(this).find('.box-text').hide();
-         // $(this).find('.box-text-background').show(300);
-       }
+    function() {
+      // var colors = ['#ff0000', '#B35A42', '#0000ff'];
+      // var random_color = colors[Math.floor(Math.random() * colors.length)];
+      $(this).removeClass('animated pulse infinite');
+      if (!$(this).data('clicked')) {
+        $(this).css({
+          "background-color": "rgba(255,244,194, 0.5)"
+        });
+        // $(this).find('.box-text').hide();
+        // $(this).find('.box-text-background').show(300);
       }
-   );
+    }
+  );
 
-   // $('.selection-box').click(
-   //
-   //    function () {
-   //      var boxname = '#' + $(this).attr('id') + '-box';
-   //
-   //      if ($(this).is(":visible")) {
-   //        $(this).hide(500);
-   //        $(this).data('clicked', false)
-   //      } else {
-   //        if (allClosed()) {
-   //          $(this).show(500);
-   //        } else {
-   //          $(this).delay(500).show(500);
-   //        }
-   //        $(this).data('clicked', true)
-   //      }
-   //
-   //    },
-   // );
+  // $('.picture-box').click(
+  //
+  //    function () {
+  //      var box_id = '#' + $(this).attr('id') + '-box';
+  //
+  //      if ($(this).is(":visible")) {
+  //        $(this).hide(500);
+  //        $(this).data('clicked', false)
+  //      } else {
+  //        if (allClosed()) {
+  //          $(this).show(500);
+  //        } else {
+  //          $(this).delay(500).show(500);
+  //        }
+  //        $(this).data('clicked', true)
+  //      }
+  //
+  //    },
+  // );
 
-   $('.whatstaysheader').hover(
-      function () {
-        var colors = ['#ff0000', '#B35A42', '#0000ff'];
-        var random_color = colors[Math.floor(Math.random() * colors.length)];
-         $(this).addClass('animated pulse infinite');
-      },
+  $('.whatstaysheader').hover(
+    function() {
+      var colors = ['#ff0000', '#B35A42', '#0000ff'];
+      var random_color = colors[Math.floor(Math.random() * colors.length)];
+      $(this).addClass('animated pulse infinite');
+    },
 
-      function () {
-        var colors = ['#ff0000', '#B35A42', '#0000ff'];
-        var random_color = colors[Math.floor(Math.random() * colors.length)];
-         $(this).removeClass('animated pulse infinite');
-      }
-   );
+    function() {
+      var colors = ['#ff0000', '#B35A42', '#0000ff'];
+      var random_color = colors[Math.floor(Math.random() * colors.length)];
+      $(this).removeClass('animated pulse infinite');
+    }
+  );
 
-   $('.whatstaysheader').click(
-      function () {
-        window.open('https://soundcloud.com/kati-malison/sets/what-stays-rev-3-masters/s-2XN4d9vyuXF', '_blank').focus();
-      }
-    );
+  $('.whatstaysheader').click(
+    function() {
+      window.open('https://soundcloud.com/kati-malison/sets/what-stays-rev-3-masters/s-2XN4d9vyuXF', '_blank').focus();
+    }
+  );
 
 });
 
-function closeThisThing(thing) {
+function closeContent(content_id) {
 
-  var thing_box = thing + '-box'
-  $(thing).hide(500);
-  $(thing_box).data('clicked', false)
-  $(thing_box).css({"background-color":"rgba(255,244,194, 0.5)"});
-  $(thing_box).removeClass('animated pulse infinite');
+  var box_id = content_id + '-box'
+  $(content_id).hide(500);
+  $(box_id).data('clicked', false)
+  $(box_id).css({"background-color": "rgba(255,244,194, 0.5)"});
+  $(box_id).parent().css('background-color', 'transparent');
+  $(box_id).removeClass('animated pulse infinite');
 }
 
 
 
 function allClosed() {
   if ($("#aboutWhatStays").is(":visible")) {
-    closeThisThing("#aboutWhatStays")
+    closeContent("#aboutWhatStays")
     return false;
   }
   if ($("#aboutKatiMalison").is(":visible")) {
-    closeThisThing("#aboutKatiMalison")
+    closeContent("#aboutKatiMalison")
     return false;
   }
   if ($("#aboutRecordingProcess").is(":visible")) {
-    closeThisThing("#aboutRecordingProcess")
+    closeContent("#aboutRecordingProcess")
     return false;
   }
   if ($("#aspirations").is(":visible")) {
-    closeThisThing("#aspirations")
+    closeContent("#aspirations")
     return false;
   }
   if ($("#listenWhatStays").is(":visible")) {
-    closeThisThing("#listenWhatStays")
+    closeContent("#listenWhatStays")
     return false;
   }
   if ($("#videoALight").is(":visible")) {
-    closeThisThing("#videoALight")
+    closeContent("#videoALight")
     return false;
   }
   if ($("#videoMirrors").is(":visible")) {
-    closeThisThing("#videoMirrors")
+    closeContent("#videoMirrors")
     return false;
   }
   if ($("#lyricBook").is(":visible")) {
-    closeThisThing("#lyricBook")
+    closeContent("#lyricBook")
     return false;
   }
   return true
 }
 
-
-function aboutWhatStays() {
-
-  if ($("#aboutWhatStays").is(":visible")) {
-    $("#aboutWhatStays").hide(500);
-    $("#aboutWhatStays-box").data('clicked', false)
+function toggleContent(content_id, box_id) {
+  if ($(content_id).is(":visible")) {
+    closeContent(content_id);
   } else {
     if (allClosed()) {
-      $("#aboutWhatStays").show(500);
-      $(this).css('border-width', 'thick');
+      $(content_id).show(500);
+      $(box_id).parent().css('background-color', 'white');
     } else {
-      $("#aboutWhatStays").delay(500).show(500);
-      $(this).css('border-width', 'thick');
+      $(content_id).delay(500).show(500);
+      $(box_id).parent().css('background-color', 'white');
     }
-    $("#aboutWhatStays-box").data('clicked', true)
+    $(box_id).data('clicked', true)
   }
+
+}
+
+function aboutWhatStays() {
+  var content_id = "#aboutWhatStays";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }
 
 function aboutKatiMalison() {
-  if ($("#aboutKatiMalison").is(":visible")) {
-    $("#aboutKatiMalison").hide(500);
-    $("#aboutKatiMalison-box").data('clicked', false)
-  } else {
-    if (allClosed()) {
-      $("#aboutKatiMalison").show(500);
-    } else {
-      $("#aboutKatiMalison").delay(500).show(500);
-    }
-    $("#aboutKatiMalison-box").data('clicked', true)
-  }
+  var content_id = "#aboutKatiMalison";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }
 
 function aboutRecordingProcess() {
-  if ($("#aboutRecordingProcess").is(":visible")) {
-    $("#aboutRecordingProcess").hide(500);
-    $("#aboutRecordingProcess-box").data('clicked', false)
-  } else {
-    if (allClosed()) {
-      $("#aboutRecordingProcess").show(500);
-    } else {
-      $("#aboutRecordingProcess").delay(500).show(500);
-    }
-    $("#aboutRecordingProcess-box").data('clicked', true)
-  }
+  var content_id = "#aboutRecordingProcess";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }
 
 function aspirations() {
-  if ($("#aspirations").is(":visible")) {
-    $("#aspirations").hide(500);
-    $("#aspirations-box").data('clicked', false)
-  } else {
-    if (allClosed()) {
-      $("#aspirations").show(500);
-    } else {
-      $("#aspirations").delay(500).show(500);
-    }
-    $("#aspirations-box").data('clicked', true)
-  }
+  var content_id = "#aspirations";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }
 
 function listenWhatStays() {
-  if ($("#listenWhatStays").is(":visible")) {
-    $("#listenWhatStays").hide(500);
-    $("#listenWhatStays-box").data('clicked', false)
-  } else {
-    if (allClosed()) {
-      $("#listenWhatStays").show(500);
-    } else {
-      $("#listenWhatStays").delay(500).show(500);
-    }
-    $("#listenWhatStays-box").data('clicked', true)
-  }
+  var content_id = "#listenWhatStays";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }
 
 function videoALight() {
-  if ($("#videoALight").is(":visible")) {
-    $("#videoALight").hide(500);
-    $("#videoALight-box").data('clicked', false)
-  } else {
-    if (allClosed()) {
-      $("#videoALight").show(500);
-    } else {
-      $("#videoALight").delay(500).show(500);
-    }
-    $("#videoALight-box").data('clicked', true)
-  }
+  var content_id = "#videoALight";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }
 
 function videoMirrors() {
-  if ($("#videoMirrors").is(":visible")) {
-    $("#videoMirrors").hide(500);
-    $("#videoMirrors-box").data('clicked', false)
-  } else {
-    if (allClosed()) {
-      $("#videoMirrors").show(500);
-    } else {
-      $("#videoMirrors").delay(500).show(500);
-    }
-    $("#videoMirrors-box").data('clicked', true)
-  }
+  var content_id = "#videoMirrors";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }
 
 function lyricBook() {
-  if ($("#lyricBook").is(":visible")) {
-    $("#lyricBook").hide(500);
-    $("#lyricBook-box").data('clicked', false)
-  } else {
-    if (allClosed()) {
-      $("#lyricBook").show(500);
-    } else {
-      $("#lyricBook").delay(500).show(500);
-    }
-    $("#lyricBook-box").data('clicked', true)
-  }
+  var content_id = "#lyricBook";
+  var box_id = content_id + "-box";
+
+  toggleContent(content_id, box_id);
 }

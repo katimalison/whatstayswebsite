@@ -1,6 +1,6 @@
 body {
   /* background-color: #FCE372; */
-  background-color: #FFF4C2;
+  background-color: black;
   height: 100vh;
   min-height: 100vh;
 }
@@ -14,13 +14,13 @@ body {
 }
 
 .fill {
-    min-height: 100%;
-    height: 100%;
-    padding:40px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    /* justify-content: space-around; */
+  min-height: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* justify-content: space-around; */
 }
 
 .centered {
@@ -31,25 +31,26 @@ body {
 }
 
 .selection-box {
+  /* background-color: white; */
+  max-height: 350px;
+}
+
+.picture-box {
   /* background-color: #CCA69A; */
   margin: 10px;
   padding: 10px;
-  border-style: solid;
-  border-width: 0px;
-  border-color: white;
-  transition: border-color 300ms;
   background-repeat: no-repeat;
   background-size: 600px 350px;
   background-position: center;
-  background-color: rgba(255,244,194, 0.4);
-  background-blend-mode:lighten;
-  max-height: 350px;
+  background-color: rgba(255, 244, 194, 0.4);
+  background-blend-mode: lighten;
   color: #f1c232;
   font-family: monospace;
   font-weight: 400;
   text-align: center;
-  vertical-align: center;
-  padding-top: 40px
+  padding-top: 40px;
+  height: calc(100% - 20px);
+  /* width: 100%; */
 }
 
 /* .my-element {
@@ -60,12 +61,13 @@ body {
 .selection-box:active {
   border-color: white;
 } */
-
 .box-text {
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.9);;
+  background-color: rgba(255, 255, 255, 0.9);
+  ;
   display: block;
 }
+
 .box-text-idle {
   display: flex;
 }
@@ -74,40 +76,39 @@ body {
   background-color: black;
   padding: 10px;
 } */
-
 #aboutWhatStays-box {
-    background-image: url("../imgs/tea1.jpg");
-    /* background-size: 550px 320px; */
+  background-image: url("../imgs/tea1.jpg");
+  /* background-size: 550px 320px; */
 }
 
 #aboutKatiMalison-box {
-    background-image: url("../imgs/kati.jpeg");
-    background-size: 300px 400px;
+  background-image: url("../imgs/kati.jpeg");
+  background-size: 300px 400px;
 }
 
 #aboutRecordingProcess-box {
-    background-image: url("../imgs/recording.jpeg");
+  background-image: url("../imgs/recording.jpeg");
 }
 
 #videoMirrors-box {
-    background-image: url("../imgs/mirrors.jpeg");
+  background-image: url("../imgs/mirrors.jpeg");
 }
 
 #aspirations-box {
-    background-image: url("../imgs/aspirations.jpg");
+  background-image: url("../imgs/aspirations.jpg");
 }
 
 #listenWhatStays-box {
-    background-image: url("../imgs/listen.jpeg");
+  background-image: url("../imgs/listen.jpeg");
 }
 
 #videoALight-box {
-    background-image: url("../imgs/alight.jpeg");
+  background-image: url("../imgs/alight.jpeg");
 }
 
 #lyricBook-box {
-    background-image: url("../imgs/lyricbook.jpeg");
-    background-size: 400px 400px;
+  background-image: url("../imgs/lyricbook.jpeg");
+  background-size: 400px 400px;
 }
 
 .first-row, .second-row {
@@ -118,6 +119,7 @@ body {
 .hidden-at-first {
   height: 500px;
   padding: 15px;
+  margin: 0px 15px;
   font-family: monospace;
   font-size: 15px;
   background-color: white;
@@ -125,14 +127,14 @@ body {
   color: #f1c232;
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   align-self: stretch;
   display: none;
   overflow-y: scroll;
 }
 
-.hidden-at-first[style*='display: block']{
-    display: flex !important;
+.hidden-at-first[style*='display: block'] {
+  display: flex !important;
 }
 
 .text-div {
@@ -145,20 +147,11 @@ body {
   align-items: center;
 }
 
-/* .content-row {
-  flex-grow: 1;
-} */
-
 .what-stays {
   flex-grow: 0
-}
-
-.left-col, .center-col, .right-col {
-  flex-grow: 1;
 }
 
 .vimeo-container {
   display: flex;
   flex-direction: row;
-
 }
