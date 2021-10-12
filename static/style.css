@@ -23,18 +23,14 @@ body {
   justify-content: center;
 }
 
-.selection-box-bottom, .selection-box-top {
+.selection-box {
   max-height: 350px;
   margin: 10px;
   background-color: rgba(255, 244, 194, 0.4);
   display: flex;
 }
 
-/* .selection-box-bottom {
-
-} */
-
-.selection-box-bottom {
+.bottom {
   flex-direction: column;
   justify-content:flex-end;
 }
