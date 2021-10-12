@@ -13,7 +13,7 @@
   <title>What Stays</title>
 </head>
 
-<body onload="allClosed()">
+<body onload="closeAll()">
   <div class="container fill">
     <!-- <div class="row no-gutters what-stays">
       <div class="col-sm">
@@ -23,8 +23,8 @@
       </div>
     </div> -->
     <div class="row no-gutters first-row">
-      <div class="col-sm selection-box-top" onclick="listenWhatStays()" id="listenWhatStays-box">
-        <img src="imgs/screw_1.png" class="picture-box"></img>
+      <div class="col-sm selection-box-top">
+        <img src="imgs/screw_1.png" class="picture-box" onclick="listenWhatStays()" id="listenWhatStays-box"></img>
         <span class="text-over-image-top">Listen to What Stays</span>
       </div>
       <div class="col-sm selection-box-top">
@@ -82,7 +82,7 @@ Peter Geiser: mixing, edrums
 Brandon Peralta: mastering
 
       </div>
-      <div id="aspirations" class="col hidden-at-first centered">
+      <div id="aspirations" class="col hidden-at-first">
         <div class="vimeo-container">
           <div class="vimeo-canvas">
             <iframe src="https://player.vimeo.com/video/624750234?h=0d3002e03c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="225" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
@@ -118,8 +118,8 @@ Brandon Peralta: mastering
         <iframe width="640" height="360" src="https://www.youtube.com/embed/LbpfNhq0btU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
-      <div id="lyricBook" class="col hidden-at-first">
-        Lyric Book
+      <div id="craterLake" class="col hidden-at-first">
+        <img src="imgs/crater_lake_1.jpg"></img>
       </div>
     </div>
     <div class="row no-gutters second-row">
@@ -132,8 +132,8 @@ Brandon Peralta: mastering
         <span class="text-over-image-bottom">Video for Mirrors</span>
       </div>
       <div class="col-sm selection-box-bottom">
-        <img src="imgs/screw_7.png" class="picture-box" onclick="lyricBook()" id="lyricBook-box"></img>
-        <span class="text-over-image-bottom">Lyric Book</span>
+        <img src="imgs/screw_7.png" class="picture-box" onclick="craterLake()" id="craterLake-box"></img>
+        <span class="text-over-image-bottom">Crater Lake/LP2</span>
       </div>
       <div class="col-sm selection-box-bottom">
         <img src="imgs/screw_8.png" class="picture-box" onclick="aboutRecordingProcess()" id="aboutRecordingProcess-box"></img>
@@ -141,6 +141,11 @@ Brandon Peralta: mastering
       </div>
     </div>
     <!-- <div>A website by Kati Malison</div> -->
+  </div>
+  <div class="title-whatstays">
+    <img src="imgs/title.png" class="img-whatstays"></img>
+    <span style="margin: 10px; white-space: pre;">A website by Kati Malison
+for the album by Kati Malison</span>
   </div>
 
   <!-- Optional JavaScript -->

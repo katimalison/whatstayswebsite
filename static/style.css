@@ -1,7 +1,7 @@
 body {
   background-image: url("../imgs/single_two.jpeg");
   /* background-position: center; */
-  background-size: 1900px 1900px;;
+  background-size: 1950px 1950px;;
   height: 100vh;
   min-height: 100vh;
 }
@@ -52,38 +52,6 @@ body {
   /* display: none; */
 }
 
-#aboutWhatStays-box {
-  background-image: url("../iimgs/test.png");
-}
-
-#coverArt-box {
-  background-image: url("../iimgs/kati.jpeg");
-}
-
-#aboutRecordingProcess-box {
-  background-image: url("../iimgs/recording.jpeg");
-}
-
-#videoMirrors-box {
-  background-image: url("../iimgs/mirrors.jpeg");
-}
-
-#aspirations-box {
-  background-image: url("../iimgs/test.png");
-}
-
-#listenWhatStays-box {
-  background-image: url("../iimgs/single_one.jpeg");
-}
-
-#videoALight-box {
-  background-image: url("../iimgs/test.png");
-}
-
-#lyricBook-box {
-  background-image: url("../iimgs/test.png");
-}
-
 .first-row, .second-row {
   flex-grow: 1;
   flex-shrink: 4;
@@ -91,7 +59,7 @@ body {
 }
 
 .hidden-at-first {
-  height: 500px;
+  height: 480px;
   margin: 20px;
   font-family: monospace;
   font-size: 15px;
@@ -127,8 +95,11 @@ body {
 }
 
 .vimeo-container {
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .selected-picture-container {
@@ -187,4 +158,25 @@ iframe {
 
 .vimeo-canvas {
   margin: 10px;
+}
+
+.title-whatstays {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  height: 500px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.85;
+  color: rgba(255, 244, 194, 0.8);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.img-whatstays {
+  object-fit: cover;
+  padding: 10px 0px;
+  height: 100%;
+  width: 250px;
 }
