@@ -6,8 +6,6 @@ body {
 }
 
 .fill {
-  /* position:absolute;
-  left: 300px; */
   flex-direction: column;
   display: flex;
   align-items: stretch;
@@ -16,6 +14,7 @@ body {
   height: 100%;
   padding: 50px;
   margin-left: max(240px, 20%);
+  overflow-y: scroll;
 }
 
 .centered {
@@ -50,8 +49,8 @@ body {
 }
 
 .first-row, .second-row {
-  flex-grow: 1;
-  flex-shrink: 4;
+  flex-grow: 0;
+  /* flex-shrink: 4; */
   max-height: 350px;
 }
 
@@ -74,11 +73,12 @@ body {
 .text-div {
   height: 460px;
   white-space: pre-wrap;
-  background-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0,0,0, 0.5);
+  box-shadow: 0 0 5px 10px rgba(0,0,0, 0.5);
   font-size: 15px;
-  padding: 0px;
-  margin: 15px 25px
+  padding: 5px 5px;
+  margin: 15px 30px
 }
 
 .multi-video {
@@ -158,7 +158,7 @@ iframe {
   margin: 10px;
 }
 
-.title-whatstays {
+.whatstaysheader {
   position: absolute;
   top: 40px;
   left: 20px;
@@ -177,4 +177,46 @@ iframe {
   padding: 10px 0px;
   height: 100%;
   width: 250px;
+}
+
+.crater-lake-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.crater-lake-pics {
+  width: calc(50% - 10px);
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.9;
+
+}
+
+.credits-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.credits {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.credits-picture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 0;
+
+}
+
+.credits-picture {
+  margin: 20px;
+  width: 300px;
+  height: auto;
+
 }

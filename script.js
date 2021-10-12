@@ -30,14 +30,10 @@ $(document).ready(function() {
 
   $('.whatstaysheader').hover(
     function() {
-      var colors = ['#ff0000', '#B35A42', '#0000ff'];
-      var random_color = colors[Math.floor(Math.random() * colors.length)];
       $(this).addClass('animated pulse infinite');
     },
 
     function() {
-      var colors = ['#ff0000', '#B35A42', '#0000ff'];
-      var random_color = colors[Math.floor(Math.random() * colors.length)];
       $(this).removeClass('animated pulse infinite');
     }
   );
@@ -129,7 +125,7 @@ function animateGrow(box_id) {
 }
 
 function animateShrink(box_id) {
-  $(box_id).animate({height: "200px"}, 500);
+  $(box_id).animate({height: "150px"}, 400);
 }
 
 function setBright(box_id) {
@@ -137,7 +133,7 @@ function setBright(box_id) {
 }
 
 function setDim(box_id) {
-  $(box_id).css({"opacity" : 0.75});
+  $(box_id).css({"opacity" : 0.85});
 }
 
 function setNormal(box_id) {
@@ -278,8 +274,9 @@ function toggleContent(content_id, box_id) {
       growAll();
   } else {
     if (closeAll()) {
-      shrinkAll();
-      $(content_id).show(500);
+      $(content_id).show(500, function() {
+        shrinkAll();
+      });
       // $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
     } else {
       growAll();
