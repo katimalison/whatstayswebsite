@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
   );
 
-  $('.whatstaysheader').hover(
+  $('.img-whatstays').hover(
     function() {
       $(this).addClass('animated pulse infinite');
     },
@@ -38,7 +38,7 @@ $(document).ready(function() {
     }
   );
 
-  $('.whatstaysheader').click(
+  $('.img-whatstays').click(
     function() {
       window.open('https://soundcloud.com/kati-malison/sets/what-stays-rev-3-masters/s-2XN4d9vyuXF', '_blank').focus();
     }
