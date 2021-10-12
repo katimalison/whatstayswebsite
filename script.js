@@ -55,7 +55,7 @@ function closeContent(content_id) {
   var box_id = content_id + '-box'
   $(content_id).hide(500);
   $(box_id).data('clicked', false)
-  $(box_id).css({"background-color": "rgba(255, 244, 194, 0.4)"});
+  // $(box_id).css({"background-color": "rgba(255, 244, 194, 0.4)"});
   // $(box_id).parent().css('background-color', 'transparent');
   $(box_id).removeClass('animated pulse infinite');
 }
@@ -124,16 +124,46 @@ function allClosed() {
   return true
 }
 
+function animateGrow(box_id) {
+  $(box_id).animate({height: "330px"}, 500);
+}
+
+function animateShrink(box_id) {
+  $(box_id).animate({height: "200px"}, 500);
+}
+
 function setBright(box_id) {
-  $(box_id).css({"opacity" : 1})
+  $(box_id).css({"opacity" : 1});
 }
 
 function setDim(box_id) {
-  $(box_id).css({"opacity" : 0.75})
+  $(box_id).css({"opacity" : 0.75});
 }
 
 function setNormal(box_id) {
-  $(box_id).css({"opacity" : 0.85})
+  $(box_id).css({"opacity" : 0.85});
+}
+
+function growAll() {
+    animateGrow("#aboutWhatStays-box");
+    animateGrow("#coverArt-box");
+    animateGrow("#aboutRecordingProcess-box");
+    animateGrow("#aspirations-box");
+    animateGrow("#listenWhatStays-box");
+    animateGrow("#videoALight-box");
+    animateGrow("#videoMirrors-box");
+    animateGrow("#craterLake-box");
+}
+
+function shrinkAll() {
+    animateShrink("#aboutWhatStays-box");
+    animateShrink("#coverArt-box");
+    animateShrink("#aboutRecordingProcess-box");
+    animateShrink("#aspirations-box");
+    animateShrink("#listenWhatStays-box");
+    animateShrink("#videoALight-box");
+    animateShrink("#videoMirrors-box");
+    animateShrink("#craterLake-box");
 }
 
 function returnAll() {
@@ -245,12 +275,16 @@ function toggleContent(content_id, box_id) {
   if ($(content_id).is(":visible")) {
     closeContent(content_id);
       returnAll();
+      growAll();
   } else {
     if (closeAll()) {
+      shrinkAll();
       $(content_id).show(500);
       // $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
     } else {
+      growAll();
       $(content_id).delay(500).show(500);
+      shrinkAll();
       // $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
     }
     dimAllBut(box_id);

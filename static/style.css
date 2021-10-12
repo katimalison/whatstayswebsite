@@ -43,7 +43,7 @@ body {
   font-size: 16px;
   text-align: center;
   width: 100%;
-  height: 255px;
+  height: 330px;
   opacity: 0.85;
   object-fit: cover;
   /* display: none; */
@@ -57,7 +57,7 @@ body {
 
 .hidden-at-first {
   height: 480px;
-  margin: 20px;
+  margin: 15px;
   font-family: monospace;
   font-size: 15px;
   /* background-color: rgba(131,141,176,0.7); */
@@ -72,13 +72,13 @@ body {
 }
 
 .text-div {
-  height: 480px;
+  height: 460px;
   white-space: pre-wrap;
   background-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.6);
   font-size: 15px;
   padding: 0px;
-  margin: 30px 50px
+  margin: 15px 25px
 }
 
 .multi-video {
@@ -130,6 +130,7 @@ body {
 
 .text-over-image-top, .text-over-image-bottom {
    position: absolute;
+   top: 0;
    left: 0;
    width: calc(100% - 36px);
    font-family: monospace;
@@ -141,13 +142,13 @@ body {
    background-color: rgba(255, 255, 255, 0.7);
 }
 
-.text-over-image-top {
+/* .text-over-image-top {
   bottom: 0px;
 }
 
 .text-over-image-bottom {
    top: 0px;
-}
+} */
 
 iframe {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
