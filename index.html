@@ -23,33 +23,21 @@
       </div>
     </div> -->
     <div class="row no-gutters first-row">
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="listenWhatStays()" id="listenWhatStays-box">
-          <div class="box-text">
-            <span>Listen to What Stays</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-top" onclick="listenWhatStays()" id="listenWhatStays-box">
+        <img src="imgs/screw_1.png" class="picture-box"></img>
+        <span class="text-over-image-top">Listen to What Stays</span>
       </div>
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="aboutWhatStays()" id="aboutWhatStays-box">
-          <div class="box-text">
-            <span>About What Stays</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-top">
+        <img src="imgs/screw_2.png" class="picture-box" onclick="aboutWhatStays()" id="aboutWhatStays-box"></img>
+        <span class="text-over-image-top">About What Stays</span>
       </div>
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="coverArt()" id="coverArt-box">
-          <div class="box-text">
-            <span>Cover Art</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-top">
+        <img src="imgs/screw_3.png" class="picture-box" onclick="coverArt()" id="coverArt-box"></img>
+        <span class="text-over-image-top">Cover Art</span>
       </div>
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="aspirations()" id="aspirations-box">
-          <div class="box-text">
-            <span>Visuals & Spotify Canvasses</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-top">
+        <img src="imgs/screw_4.png" class="picture-box" onclick="aspirations()" id="aspirations-box"></img>
+        <span class="text-over-image-top">Spotify Canvasses</span>
       </div>
     </div>
     <div class="row content-row">
@@ -82,55 +70,51 @@
           </div>
       </div>
       <div id="aboutRecordingProcess" class="col hidden-at-first text-div">
-        What Stays was self-recorded in December 2020 at a cabin near Crater Lake, Oregon. It was written, engineered, and produced by me, Kati Malison. My bandmates, Lewis Brown and Max Holbrook, were collaborators in the truest sense, and
-        contributed in far more ways than credits can convey. I wouldn’t have been able to manage the technical side of making this album without the advice of Heather Jones and Bradford Krieger. What Stays was mixed by Peter Geiser and mastered by
-        Brandon Peralta.
+        What Stays was self-recorded in December 2020 at a cabin near Crater Lake, Oregon. It was written, engineered, and produced by me, Kati Malison. My bandmates, Lewis Brown and Max Holbrook, were collaborators in the truest sense, and contributed in far more ways than credits can convey. I wouldn’t have been able to manage the technical side of making this album without the advice of Heather Jones and Bradford Krieger. What Stays was mixed by Peter Geiser and mastered by Brandon Peralta.
 
-        Kati Malison: lead vocals, backing vocals, guitar, bass, synth
-        Lewis Brown: lead guitar, drums, edrums, synth, backing vocals
-        Max Holbrook: bass, guitar, keys, synth, backing vocals
-        Pepe Hidalgo: drums (tracks 6 & 10)
-        Sophie Goldberg: backing vocals (tracks 9 & 10)
-        Heidi Aispuro: horns (track 12)
-        Peter Geiser: mixing, edrums
-        Brandon Peralta: mastering
+Kati Malison: lead vocals, backing vocals, guitar, bass, synth
+Lewis Brown: lead guitar, drums, edrums, synth, backing vocals
+Max Holbrook: bass, guitar, keys, synth, backing vocals
+Pepe Hidalgo: drums (tracks 6 & 10)
+Sophie Goldberg: backing vocals (tracks 9 & 10)
+Heidi Aispuro: horns (track 12)
+Peter Geiser: mixing, edrums
+Brandon Peralta: mastering
 
       </div>
-      <div id="aspirations" class="row hidden-at-first">
-        <div>Each song on What Stays has an accompanying time-lapse video These will be used as Spotify Canvases and visuals for promoting the singles. All of these were shot in my bedroom, many of them while I slept just a couple feet outside of the
-          frame.</div>
+      <div id="aspirations" class="col hidden-at-first centered">
         <div class="vimeo-container">
-          <div style="padding: 5px;">
+          <div class="vimeo-canvas">
             <iframe src="https://player.vimeo.com/video/624750234?h=0d3002e03c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="225" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
               title="A Need Canvas.mp4"></iframe>
           </div>
-          <div style="padding: 5px;">
+          <div class="vimeo-canvas">
             <iframe src="https://player.vimeo.com/video/624754972?h=321559265e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="225" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
               title="ATRT Canvas"></iframe>
           </div>
-          <div style="padding: 5px;">
+          <div class="vimeo-canvas">
             <iframe src="https://player.vimeo.com/video/624936223?h=d13e11494d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="225" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
               title="Counting Canvas.mp4"></iframe>
           </div>
-          <div style="padding: 5px;">
+          <div class="vimeo-canvas">
             <iframe src="https://player.vimeo.com/video/624849369?h=cca1a52684&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="225" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
               title="Train Brain Rot Canvas"></iframe>
           </div>
         </div>
       </div>
-      <div id="listenWhatStays" class="col hidden-at-first" style="display:flex;flex-direction:column;">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+      <div id="listenWhatStays" class="col hidden-at-first" style="display:flex;flex-direction:column;justify-content:center;">
+        <iframe class="frame" width="100%" height="480" scrolling="no" frameborder="no" allow="autoplay" style="opacity: 0.7"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1319530081%3Fsecret_token%3Ds-2XN4d9vyuXF&color=%23944808&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         <div
           style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
           <a href="https://soundcloud.com/kati-malison" title="Kati Mali" target="_blank" style="color:#cccccc;text-decoration:none;">Kati Mali</a> · <a href="https://soundcloud.com/kati-malison/sets/what-stays-rev-3-masters/s-2XN4d9vyuXF"
             title="What Stays rev 3 masters" target="_blank" style="color: #cccccc; text-decoration: none;">What Stays rev 3 masters</a></div>
       </div>
-      <div id="videoALight" class="col hidden-at-first">
+      <div id="videoALight" class="col hidden-at-first centered">
         <iframe width="640" height="360" src="https://www.youtube.com/embed/O5HRSeILyqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
-      <div id="videoMirrors" class="col hidden-at-first">
+      <div id="videoMirrors" class="col hidden-at-first centered">
         <iframe width="640" height="360" src="https://www.youtube.com/embed/LbpfNhq0btU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
@@ -139,33 +123,21 @@
       </div>
     </div>
     <div class="row no-gutters second-row">
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="videoALight()" id="videoALight-box">
-          <div class="box-text">
-            <span>Video for A Light</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-bottom">
+        <img src="imgs/screw_5.png" class="picture-box" onclick="videoALight()" id="videoALight-box"></img>
+        <span class="text-over-image-bottom">Video for A Light</span>
       </div>
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="videoMirrors()" id="videoMirrors-box">
-          <div class="box-text">
-            <span>Video for Mirrors</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-bottom">
+        <img src="imgs/screw_6.png" class="picture-box" onclick="videoMirrors()" id="videoMirrors-box"></img>
+        <span class="text-over-image-bottom">Video for Mirrors</span>
       </div>
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="lyricBook()" id="lyricBook-box">
-          <div class="box-text">
-            <span>Lyric Book</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-bottom">
+        <img src="imgs/screw_7.png" class="picture-box" onclick="lyricBook()" id="lyricBook-box"></img>
+        <span class="text-over-image-bottom">Lyric Book</span>
       </div>
-      <div class="col-sm selection-box">
-        <div class="picture-box" onclick="aboutRecordingProcess()" id="aboutRecordingProcess-box">
-          <div class="box-text">
-            <span>Credits</span>
-          </div>
-        </div>
+      <div class="col-sm selection-box-bottom">
+        <img src="imgs/screw_8.png" class="picture-box" onclick="aboutRecordingProcess()" id="aboutRecordingProcess-box"></img>
+        <span class="text-over-image-bottom">Credits</span>
       </div>
     </div>
     <!-- <div>A website by Kati Malison</div> -->
