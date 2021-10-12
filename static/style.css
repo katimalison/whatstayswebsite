@@ -125,7 +125,7 @@ body {
   margin: 5px;
   height: auto;
   opacity: 0.9;
-  box-shadow: 0 0 4px 6px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .text-over-image-top, .text-over-image-bottom {
@@ -151,7 +151,7 @@ body {
 } */
 
 iframe {
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .vimeo-canvas {
