@@ -20,7 +20,7 @@ $(document).ready(function() {
       $(this).removeClass('animated pulse infinite');
       if (!$(this).data('clicked')) {
         $(this).css({
-          "background-color": "rgba(255,244,194, 0.5)"
+          "background-color": "rgba(255,244,194, 0.4)"
         });
         // $(this).find('.box-text').hide();
         // $(this).find('.box-text-background').show(300);
@@ -75,7 +75,7 @@ function closeContent(content_id) {
   var box_id = content_id + '-box'
   $(content_id).hide(500);
   $(box_id).data('clicked', false)
-  $(box_id).css({"background-color": "rgba(255,244,194, 0.5)"});
+  $(box_id).css({"background-color": "rgba(255, 244, 194, 0.4)"});
   $(box_id).parent().css('background-color', 'transparent');
   $(box_id).removeClass('animated pulse infinite');
 }
@@ -87,8 +87,8 @@ function allClosed() {
     closeContent("#aboutWhatStays")
     return false;
   }
-  if ($("#aboutKatiMalison").is(":visible")) {
-    closeContent("#aboutKatiMalison")
+  if ($("#coverArt").is(":visible")) {
+    closeContent("#coverArt")
     return false;
   }
   if ($("#aboutRecordingProcess").is(":visible")) {
@@ -124,10 +124,10 @@ function toggleContent(content_id, box_id) {
   } else {
     if (allClosed()) {
       $(content_id).show(500);
-      $(box_id).parent().css('background-color', 'white');
+      $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
     } else {
       $(content_id).delay(500).show(500);
-      $(box_id).parent().css('background-color', 'white');
+      $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
     }
     $(box_id).data('clicked', true)
   }
@@ -141,8 +141,8 @@ function aboutWhatStays() {
   toggleContent(content_id, box_id);
 }
 
-function aboutKatiMalison() {
-  var content_id = "#aboutKatiMalison";
+function coverArt() {
+  var content_id = "#coverArt";
   var box_id = content_id + "-box";
 
   toggleContent(content_id, box_id);
