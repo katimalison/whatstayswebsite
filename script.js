@@ -129,15 +129,18 @@ function animateShrink(box_id) {
 }
 
 function setBright(box_id) {
+  $(box_id).parent().css({"opacity" : 1});
   $(box_id).css({"opacity" : 1});
 }
 
 function setDim(box_id) {
-  $(box_id).css({"opacity" : 0.85});
+  $(box_id).parent().css({"opacity" : 0.5});
+  $(box_id).css({"opacity" : 1});
 }
 
 function setNormal(box_id) {
   $(box_id).css({"opacity" : 0.85});
+  $(box_id).parent().css({"opacity" : 1});
 }
 
 function growAll() {
