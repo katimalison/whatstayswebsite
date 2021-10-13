@@ -170,7 +170,7 @@ iframe {
   display: flex;
   flex-direction: column;
   opacity: 0.85;
-  color: rgba(255, 244, 194, 0.8);
+  color: #fff4c2;
   font-family: monospace;
   font-size: 14px;
 }
