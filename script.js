@@ -65,12 +65,12 @@ function closeAll() {
     closeContent("#coverArt")
     return false;
   }
-  if ($("#aboutRecordingProcess").is(":visible")) {
-    closeContent("#aboutRecordingProcess")
+  if ($("#credits").is(":visible")) {
+    closeContent("#credits")
     return false;
   }
-  if ($("#aspirations").is(":visible")) {
-    closeContent("#aspirations")
+  if ($("#spotifyVisuals").is(":visible")) {
+    closeContent("#spotifyVisuals")
     return false;
   }
   if ($("#listenWhatStays").is(":visible")) {
@@ -99,10 +99,10 @@ function allClosed() {
   if ($("#coverArt").is(":visible")) {
     return false;
   }
-  if ($("#aboutRecordingProcess").is(":visible")) {
+  if ($("#credits").is(":visible")) {
     return false;
   }
-  if ($("#aspirations").is(":visible")) {
+  if ($("#spotifyVisuals").is(":visible")) {
     return false;
   }
   if ($("#listenWhatStays").is(":visible")) {
@@ -129,25 +129,28 @@ function animateShrink(box_id) {
 }
 
 function setBright(box_id) {
+  $(box_id).parent().css({"opacity" : 1});
   $(box_id).parent().css({"background-color" : "rgba(255, 244, 194, 0.6)"});
   $(box_id).css({"opacity" : 1});
 }
 
 function setDim(box_id) {
-  $(box_id).parent().css({"background-color" : "rgba(255, 244, 194, 0.2)"});
-  $(box_id).css({"opacity" : 0.6});
+  $(box_id).parent().css({"opacity" : 1});
+  $(box_id).parent().css({"background-color" : "rgba(255, 244, 194, 0.6)"});
+  $(box_id).css({"opacity" : 1});
 }
 
 function setNormal(box_id) {
   $(box_id).css({"opacity" : 0.85});
   $(box_id).parent().css({"background-color" : "rgba(255, 244, 194, 0.6)"});
+  $(box_id).parent().css({"opacity" : 1});
 }
 
 function growAll() {
     animateGrow("#aboutWhatStays-box");
     animateGrow("#coverArt-box");
-    animateGrow("#aboutRecordingProcess-box");
-    animateGrow("#aspirations-box");
+    animateGrow("#credits-box");
+    animateGrow("#spotifyVisuals-box");
     animateGrow("#listenWhatStays-box");
     animateGrow("#videoALight-box");
     animateGrow("#videoMirrors-box");
@@ -157,8 +160,8 @@ function growAll() {
 function shrinkAll() {
     animateShrink("#aboutWhatStays-box");
     animateShrink("#coverArt-box");
-    animateShrink("#aboutRecordingProcess-box");
-    animateShrink("#aspirations-box");
+    animateShrink("#credits-box");
+    animateShrink("#spotifyVisuals-box");
     animateShrink("#listenWhatStays-box");
     animateShrink("#videoALight-box");
     animateShrink("#videoMirrors-box");
@@ -168,8 +171,8 @@ function shrinkAll() {
 function returnAll() {
     setNormal("#aboutWhatStays-box");
     setNormal("#coverArt-box");
-    setNormal("#aboutRecordingProcess-box");
-    setNormal("#aspirations-box");
+    setNormal("#credits-box");
+    setNormal("#spotifyVisuals-box");
     setNormal("#listenWhatStays-box");
     setNormal("#videoALight-box");
     setNormal("#videoMirrors-box");
@@ -185,11 +188,11 @@ function dimAllBut(box_id) {
   if (box_id !== "#coverArt-box") {
     setDim("#coverArt-box");
   }
-  if (box_id !== "#aboutRecordingProcess-box") {
-    setDim("#aboutRecordingProcess-box");
+  if (box_id !== "#credits-box") {
+    setDim("#credits-box");
   }
-  if (box_id !== "#aspirations-box") {
-    setDim("#aspirations-box");
+  if (box_id !== "#spotifyVisuals-box") {
+    setDim("#spotifyVisuals-box");
   }
   if (box_id !== "#listenWhatStays-box") {
     setDim("#listenWhatStays-box");
@@ -215,12 +218,12 @@ function closeAll() {
     closeContent("#coverArt")
     return false;
   }
-  if ($("#aboutRecordingProcess").is(":visible")) {
-    closeContent("#aboutRecordingProcess")
+  if ($("#credits").is(":visible")) {
+    closeContent("#credits")
     return false;
   }
-  if ($("#aspirations").is(":visible")) {
-    closeContent("#aspirations")
+  if ($("#spotifyVisuals").is(":visible")) {
+    closeContent("#spotifyVisuals")
     return false;
   }
   if ($("#listenWhatStays").is(":visible")) {
@@ -249,10 +252,10 @@ function allClosed() {
   if ($("#coverArt").is(":visible")) {
     return false;
   }
-  if ($("#aboutRecordingProcess").is(":visible")) {
+  if ($("#credits").is(":visible")) {
     return false;
   }
-  if ($("#aspirations").is(":visible")) {
+  if ($("#spotifyVisuals").is(":visible")) {
     return false;
   }
   if ($("#listenWhatStays").is(":visible")) {
@@ -307,15 +310,15 @@ function coverArt() {
   toggleContent(content_id, box_id);
 }
 
-function aboutRecordingProcess() {
-  var content_id = "#aboutRecordingProcess";
+function credits() {
+  var content_id = "#credits";
   var box_id = content_id + "-box";
 
   toggleContent(content_id, box_id);
 }
 
-function aspirations() {
-  var content_id = "#aspirations";
+function spotifyVisuals() {
+  var content_id = "#spotifyVisuals";
   var box_id = content_id + "-box";
 
   toggleContent(content_id, box_id);

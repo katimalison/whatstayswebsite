@@ -14,6 +14,8 @@
 </head>
 
 <body onload="closeAll()">
+
+  <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="sidebar-item-small">
       <img src="imgs/title.png" class="img-whatstays"></img>
@@ -25,14 +27,11 @@
       <div class="about-text">A website by Kati Malison for an album by Kati Malison</div>
     </div>
   </div>
+
+  <!-- MAIN CONTAINER -->
   <div class="container fill">
-    <!-- <div class="row no-gutters what-stays">
-      <div class="col-sm">
-        <div class="container centered">
-          <img src="imgs/header.png" alt="What Stays" class="whatstaysheader">
-        </div>
-      </div>
-    </div> -->
+
+    <!-- TOP ROW -->
     <div class="row no-gutters first-row">
       <div class="col-sm selection-box">
         <img src="imgs/screw_1.png" class="picture-box" onclick="listenWhatStays()" id="listenWhatStays-box"></img>
@@ -47,60 +46,61 @@
         <span class="text-over-image-top">Cover Art</span>
       </div>
       <div class="col-sm selection-box">
-        <img src="imgs/screw_8.png" class="picture-box" onclick="aspirations()" id="aspirations-box"></img>
+        <img src="imgs/screw_8.png" class="picture-box" onclick="spotifyVisuals()" id="spotifyVisuals-box"></img>
         <span class="text-over-image-top">Spotify Canvasses</span>
       </div>
     </div>
-    <div class="row content-row">
-      <div id="aboutWhatStays" class="col hidden-at-first text-div">
-        The past few years have been a coming-to, a slow uncovering of a universal truth that is particularly true for me: the longer you live, the more life there is to forget. I have very few true memories— I know the story of my life the way I know loved one’s phone numbers, the names of flowers, or the words to my favorite songs. This relation to the past, dry and detached as it may be, mimics the function of memories well, pushing them out and obscuring their absence. What Stays is both an observer and an agent of how I create my past. This album watches as I construct my personal history, and it is through making it that I become consciously aware of that process. And What Stays is itself a part of the past I build: in its completion, What Stays is the most vivid, truthful stand-in for knowing my life as it once happened.
 
-        If writing these songs is what led me to realize how little I remember, reflecting on them has made me understand this grief as something fundamental to the human condition. We all desire a complete and embodied understanding of our lives. We all lose the present moment as it instantly, eternally, and ceaselessly vanishes. We all forget, and we all remember things to be different than they actually were. Worst of all, however warped our own memories, we are infinitely less able to inhabit the experiences of others, past and present. The title track of What Stays, one of the last songs I wrote for this album, grieves the loss of both my own life as it passes, and the lives of the people I love, which I can never come close enough to knowing: “Your noon sun slips behind my mountain/A day swells and is gone/Thrown out to the dogs to join/A growing wake/I can’t see clearly/So please show me/Show me what stays”
+    <!-- CONTENT ROW -->
+    <div class="row content-row">
+      
+      <!-- LISTEN TO WHAT STAYS -->
+      <div id="listenWhatStays" class="col hidden-at-first" style="display:flex;flex-direction:column;justify-content:center;">
+        <iframe class="frame" width="100%" height="480" scrolling="no" frameborder="no" allow="autoplay" style="opacity: 0.7"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1319530081%3Fsecret_token%3Ds-2XN4d9vyuXF&color=%23944808&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+          <a href="https://soundcloud.com/kati-malison" title="Kati Mali" target="_blank" style="color:#cccccc;text-decoration:none;">Kati Mali</a> · <a href="https://soundcloud.com/kati-malison/sets/what-stays-rev-3-masters/s-2XN4d9vyuXF"
+            title="What Stays rev 3 masters" target="_blank" style="color: #cccccc; text-decoration: none;">What Stays rev 3 masters</a>
+        </div>
       </div>
+
+      <!-- ABOUT WHAT STAYS -->
+      <div id="aboutWhatStays" class="col hidden-at-first text-div">
+        <p>
+          The past few years have been a coming-to, a slow uncovering of a universal truth that is particularly true for me: the longer you live, the more life there is to forget. I have very few true memories— I know the story of my life the way I know loved one’s phone numbers, the names of flowers, or the words to my favorite songs. This relation to the past, dry and detached as it may be, mimics the function of memories well, pushing them out and obscuring their absence. <em>What Stays</em> is both an observer and an agent of how I create my past. This album watches as I construct my personal history, and it is through making it that I become consciously aware of that process. And <em>What Stays</em> is itself a part of the past I build: in its completion, <em>What Stays</em> is the most vivid, truthful stand-in for knowing my life as it once happened.
+
+          If writing these songs is what led me to realize how little I remember, reflecting on them has made me understand this grief as something fundamental to the human condition. We all desire a complete and embodied understanding of our lives. We all lose the present moment as it instantly, eternally, and ceaselessly vanishes. We all forget, and we all remember things to be different than they actually were. Worst of all, however warped our own memories, we are infinitely less able to inhabit the experiences of others, past and present. The title track of <em>What Stays</em>, one of the last songs I wrote for this album, grieves the loss of both my own life as it passes, and the lives of the people I love, which I can never come close enough to knowing: “Your noon sun slips behind my mountain/A day swells and is gone/Thrown out to the dogs to join/A growing wake/I can’t see clearly/So please show me/Show me what stays”
+          </p>
+      </div>
+
+      <!-- COVER ART -->
       <div id="coverArt" class="col hidden-at-first">
         <div class="col-sm selected-picture-container centered">
           <img src="imgs/cover.jpeg" class="selected-picture" alt="Responsive image">
         </div>
-          <div class="col-sm picture-icons">
-            <div class="row no-gutters">
-              <div class="col-sm centered">
-                <img src="imgs/single_one.jpeg" class="picture-icon" alt="Responsive image">
-              </div>
-              <div class="col-sm centered">
-                <img src="imgs/single_two.jpeg" class="picture-icon" alt="Responsive image">
-              </div>
+        <div class="col-sm picture-icons">
+          <div class="row no-gutters">
+            <div class="col-sm centered">
+              <img src="imgs/single_one.jpeg" class="picture-icon" alt="Responsive image">
             </div>
-            <div class="row no-gutters">
-              <div class="col-sm centered">
-                <img src="imgs/single_three.jpeg" class="picture-icon" alt="Responsive image">
-              </div>
-              <div class="col-sm centered">
-                <img src="imgs/single_four.jpeg" class="picture-icon" alt="Responsive image">
-              </div>
+            <div class="col-sm centered">
+              <img src="imgs/single_two.jpeg" class="picture-icon" alt="Responsive image">
             </div>
           </div>
+          <div class="row no-gutters">
+            <div class="col-sm centered">
+              <img src="imgs/single_three.jpeg" class="picture-icon" alt="Responsive image">
+            </div>
+            <div class="col-sm centered">
+              <img src="imgs/single_four.jpeg" class="picture-icon" alt="Responsive image">
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="aboutRecordingProcess" class="col hidden-at-first text-div">
-        <div class="credits-row">
-        <div class="credits">
-        What Stays was self-recorded in December 2020 at a cabin near Crater Lake, Oregon. It was written, engineered, and produced by me, Kati Malison. My bandmates, Lewis Brown and Max Holbrook, were collaborators in the truest sense, and contributed in far more ways than credits can convey. I wouldn’t have been able to manage the technical side of making this album without the advice of Heather Jones and Bradford Krieger. What Stays was mixed by Peter Geiser and mastered by Brandon Peralta.
 
-Kati Malison: lead vocals, backing vocals, guitar, bass, synth
-Lewis Brown: lead guitar, drums, edrums, synth, backing vocals
-Max Holbrook: bass, guitar, keys, synth, backing vocals
-Pepe Hidalgo: drums (tracks 6 & 10)
-Sophie Goldberg: backing vocals (tracks 9 & 10)
-Heidi Aispuro: horns (track 12)
-Peter Geiser: mixing, edrums
-Brandon Peralta: mastering
-      </div>
-      <div class="credits-picture-container">
-      <img src="imgs/cover.jpeg" class="credits-picture" alt="Responsive image">
-      </div>
-    </div>
-
-      </div>
-      <div id="aspirations" class="col hidden-at-first">
+      <!-- SPOTIFY VISUALS -->
+      <div id="spotifyVisuals" class="col hidden-at-first">
         <div class="vimeo-container">
           <div class="vimeo-canvas">
             <iframe src="https://player.vimeo.com/video/624750234?h=0d3002e03c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="225" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
@@ -120,57 +120,88 @@ Brandon Peralta: mastering
           </div>
         </div>
       </div>
-      <div id="listenWhatStays" class="col hidden-at-first" style="display:flex;flex-direction:column;justify-content:center;">
-        <iframe class="frame" width="100%" height="480" scrolling="no" frameborder="no" allow="autoplay" style="opacity: 0.7"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1319530081%3Fsecret_token%3Ds-2XN4d9vyuXF&color=%23944808&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-        <div
-          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-          <a href="https://soundcloud.com/kati-malison" title="Kati Mali" target="_blank" style="color:#cccccc;text-decoration:none;">Kati Mali</a> · <a href="https://soundcloud.com/kati-malison/sets/what-stays-rev-3-masters/s-2XN4d9vyuXF"
-            title="What Stays rev 3 masters" target="_blank" style="color: #cccccc; text-decoration: none;">What Stays rev 3 masters</a></div>
-      </div>
+
+      <!-- VIDEO FOR A LIGHT -->
       <div id="videoALight" class="col hidden-at-first centered">
         <iframe width="640" height="360" src="https://www.youtube.com/embed/O5HRSeILyqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
+
+      <!-- VIDEO FOR MIRRORS -->
       <div id="videoMirrors" class="col hidden-at-first centered">
         <iframe width="640" height="360" src="https://www.youtube.com/embed/LbpfNhq0btU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
+
+      <!-- CRATER LAKE -->
       <div id="craterLake" class="row hidden-at-first text-div">
-        <!-- <div class="col text-div"> -->
-        <span style="padding-bottom:10px;">Max, Lewis, and I made What Stays over ten days at a cabin near Crater Lake, OR. We came into the sessions without arrangements; we’d never played these songs all together and tried to use that to our advantage. We experimented with tempo, instrumentation, and even structure. We were having trouble with “A Need” and were about to scrap it when Max called us into the living room one morning, having stayed up all night and transformed it from a slog of distorted guitars to the dreamscape that opens the record. Making this record was a singularly joyful experience that completely reoriented me towards a sense of openness and possibility.</span>
+        <p>
+          Max, Lewis, and I made <em>What Stays</em> over ten days at a cabin near Crater Lake, OR. We came into the sessions without arrangements; we’d never played these songs all together and tried to use that to our advantage. We experimented with tempo, instrumentation, and even structure. We were having trouble with “A Need” and were about to scrap it when Max called us into the living room one morning, having stayed up late and transformed it from a slog of distorted guitars to the dreamscape that opens the record. Making <em>What Stays</em> was a singularly joyful experience that completely reoriented me towards a sense of openness and possibility.
+        </p>
         <div class="crater-lake-container">
           <img class="crater-lake-pics" src="imgs/crater_lake_1.jpg"></img>
           <img class="crater-lake-pics" src="imgs/crater_lake_3.jpg"></img>
         </div>
-      <!-- </div> -->
       </div>
     </div>
+
+    <!-- CREDITS -->
+    <div id="credits" class="col hidden-at-first text-div">
+      <div class="credits-row">
+        <div class="credits">
+          <p>
+            <em>What Stays</em> was self-recorded in December 2020 at a cabin near Crater Lake, Oregon. It was written, engineered, and produced by me, Kati Malison. My bandmates, Lewis Brown and Max Holbrook, were collaborators in the truest
+            sense,
+            and contributed in far more ways than credits can convey. I wouldn’t have been able to manage the technical side of making this album without the advice of Heather Jones and Bradford Krieger. <em>What Stays</em> was mixed by Peter
+            Geiser
+            and mastered by Brandon Peralta.
+
+Kati Malison: lead vocals, backing vocals, guitar, bass, synth
+Lewis Brown: lead guitar, drums, edrums, synth, backing vocals
+Max Holbrook: bass, guitar, keys, synth, backing vocals
+Pepe Hidalgo: drums (tracks 6 & 10)
+Sophie Goldberg: backing vocals (tracks 9 & 10)
+Heidi Aispuro: horns (track 12)
+Peter Geiser: mixing, edrums
+Brandon Peralta: mastering
+          </p>
+        </div>
+        <div class="credits-picture-container">
+          <img src="imgs/cover.jpeg" class="credits-picture" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
     <div class="row no-gutters second-row">
+
+      <!-- VIDEO FOR A LIGHT -->
       <div class="col-sm selection-box bottom">
         <img src="imgs/cup_1.png" class="picture-box" onclick="videoALight()" id="videoALight-box"></img>
         <span class="text-over-image-bottom">Video for A Light</span>
       </div>
+
+      <!-- VIDEO FOR MIRRORS -->
       <div class="col-sm selection-box bottom">
         <img src="imgs/cup_2.png" class="picture-box" onclick="videoMirrors()" id="videoMirrors-box"></img>
         <span class="text-over-image-bottom">Video for Mirrors</span>
       </div>
+
+      <!-- CRATER LAKE -->
       <div class="col-sm selection-box bottom">
         <img src="imgs/cup_3.png" class="picture-box" onclick="craterLake()" id="craterLake-box"></img>
         <span class="text-over-image-bottom">Crater Lake</span>
       </div>
+
+      <!-- CREDITS -->
       <div class="col-sm selection-box bottom">
-        <img src="imgs/cup_4.png" class="picture-box" onclick="aboutRecordingProcess()" id="aboutRecordingProcess-box"></img>
+        <img src="imgs/cup_4.png" class="picture-box" onclick="credits()" id="credits-box"></img>
         <span class="text-over-image-bottom">Credits</span>
       </div>
     </div>
-    <!-- <div>A website by Kati Malison</div> -->
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="script.js"></script>
