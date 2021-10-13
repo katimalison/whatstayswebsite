@@ -18,13 +18,13 @@
   <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="sidebar-item-small">
-      <img src="imgs/title.png" class="img-whatstays"></img>
+      <img src="imgs/title.png" class="img-whatstays see-through"></img>
     </div>
     <div class="sidebar-item-large">
-      <img src="imgs/artist_pic.jpeg" class="artist-pic whatstays-shadow"></img>
+      <img src="imgs/artist_pic.jpeg" class="artist-pic shadow-light see-through"></img>
     </div>
     <div class="sidebar-item-small">
-      <div class="about-text">A website by Kati Malison for an album by Kati Malison</div>
+      <div class="about-text see-through">A website by Kati Malison for an album by Kati Malison</div>
     </div>
   </div>
 
@@ -53,10 +53,10 @@
 
     <!-- CONTENT ROW -->
     <div class="row content-row">
-      
+
       <!-- LISTEN TO WHAT STAYS -->
-      <div id="listenWhatStays" class="col hidden-at-first" style="display:flex;flex-direction:column;justify-content:center;">
-        <iframe class="frame" width="100%" height="480" scrolling="no" frameborder="no" allow="autoplay" style="opacity: 0.7"
+      <div id="listenWhatStays" class="col content-container" style="display:flex;flex-direction:column;justify-content:center;">
+        <iframe class="frame" width="100%" height="480" scrolling="no" frameborder="no" allow="autoplay" style="opacity: 0.8"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1319530081%3Fsecret_token%3Ds-2XN4d9vyuXF&color=%23944808&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         <div
           style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
@@ -66,7 +66,7 @@
       </div>
 
       <!-- ABOUT WHAT STAYS -->
-      <div id="aboutWhatStays" class="col hidden-at-first text-div">
+      <div id="aboutWhatStays" class="col content-container text-div shadow">
         <p>
           The past few years have been a coming-to, a slow uncovering of a universal truth that is particularly true for me: the longer you live, the more life there is to forget. I have very few true memories— I know the story of my life the way I know loved one’s phone numbers, the names of flowers, or the words to my favorite songs. This relation to the past, dry and detached as it may be, mimics the function of memories well, pushing them out and obscuring their absence. <em>What Stays</em> is both an observer and an agent of how I create my past. This album watches as I construct my personal history, and it is through making it that I become consciously aware of that process. And <em>What Stays</em> is itself a part of the past I build: in its completion, <em>What Stays</em> is the most vivid, truthful stand-in for knowing my life as it once happened.
 
@@ -75,7 +75,7 @@
       </div>
 
       <!-- COVER ART -->
-      <div id="coverArt" class="col hidden-at-first">
+      <div id="coverArt" class="col content-container">
         <div class="col-sm selected-picture-container centered">
           <img src="imgs/cover.jpeg" class="selected-picture" alt="Responsive image">
         </div>
@@ -100,7 +100,7 @@
       </div>
 
       <!-- SPOTIFY VISUALS -->
-      <div id="spotifyVisuals" class="col hidden-at-first">
+      <div id="spotifyVisuals" class="col content-container">
         <div class="vimeo-container">
           <div class="vimeo-canvas">
             <iframe src="https://player.vimeo.com/video/624750234?h=0d3002e03c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="225" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
@@ -122,19 +122,19 @@
       </div>
 
       <!-- VIDEO FOR A LIGHT -->
-      <div id="videoALight" class="col hidden-at-first centered">
+      <div id="videoALight" class="col content-container centered">
         <iframe width="640" height="360" src="https://www.youtube.com/embed/O5HRSeILyqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
 
       <!-- VIDEO FOR MIRRORS -->
-      <div id="videoMirrors" class="col hidden-at-first centered">
+      <div id="videoMirrors" class="col content-container centered">
         <iframe width="640" height="360" src="https://www.youtube.com/embed/LbpfNhq0btU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
 
       <!-- CRATER LAKE -->
-      <div id="craterLake" class="row hidden-at-first text-div">
+      <div id="craterLake" class="row content-container text-div shadow">
         <p>
           Max, Lewis, and I made <em>What Stays</em> over ten days at a cabin near Crater Lake, OR. We came into the sessions without arrangements; we’d never played these songs all together and tried to use that to our advantage. We experimented with tempo, instrumentation, and even structure. We were having trouble with “A Need” and were about to scrap it when Max called us into the living room one morning, having stayed up late and transformed it from a slog of distorted guitars to the dreamscape that opens the record. Making <em>What Stays</em> was a singularly joyful experience that completely reoriented me towards a sense of openness and possibility.
         </p>
@@ -146,15 +146,11 @@
     </div>
 
     <!-- CREDITS -->
-    <div id="credits" class="col hidden-at-first text-div">
+    <div id="credits" class="col content-container text-div shadow">
       <div class="credits-row">
         <div class="credits">
           <p>
-            <em>What Stays</em> was self-recorded in December 2020 at a cabin near Crater Lake, Oregon. It was written, engineered, and produced by me, Kati Malison. My bandmates, Lewis Brown and Max Holbrook, were collaborators in the truest
-            sense,
-            and contributed in far more ways than credits can convey. I wouldn’t have been able to manage the technical side of making this album without the advice of Heather Jones and Bradford Krieger. <em>What Stays</em> was mixed by Peter
-            Geiser
-            and mastered by Brandon Peralta.
+            <em>What Stays</em> was self-recorded in December 2020 at a cabin near Crater Lake, Oregon. It was written, engineered, and produced by me, Kati Malison. My bandmates, Lewis Brown and Max Holbrook, were collaborators in the truest sense, and contributed in far more ways than credits can convey. I wouldn’t have been able to manage the technical side of making this album without the advice of Heather Jones and Bradford Krieger. <em>What Stays</em> was mixed by Peter Geiser and mastered by Brandon Peralta.
 
 Kati Malison: lead vocals, backing vocals, guitar, bass, synth
 Lewis Brown: lead guitar, drums, edrums, synth, backing vocals
@@ -182,19 +178,19 @@ Brandon Peralta: mastering
       </div>
 
       <!-- VIDEO FOR MIRRORS -->
-      <div class="col-sm selection-box bottom">
+      <div class="col-sm selection-box">
         <img src="imgs/cup_2.png" class="picture-box" onclick="videoMirrors()" id="videoMirrors-box"></img>
         <span class="text-over-image-bottom">Video for Mirrors</span>
       </div>
 
       <!-- CRATER LAKE -->
-      <div class="col-sm selection-box bottom">
+      <div class="col-sm selection-box">
         <img src="imgs/cup_3.png" class="picture-box" onclick="craterLake()" id="craterLake-box"></img>
         <span class="text-over-image-bottom">Crater Lake</span>
       </div>
 
       <!-- CREDITS -->
-      <div class="col-sm selection-box bottom">
+      <div class="col-sm selection-box">
         <img src="imgs/cup_4.png" class="picture-box" onclick="credits()" id="credits-box"></img>
         <span class="text-over-image-bottom">Credits</span>
       </div>

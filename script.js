@@ -135,8 +135,8 @@ function setBright(box_id) {
 }
 
 function setDim(box_id) {
-  $(box_id).parent().css({"opacity" : 1});
-  $(box_id).parent().css({"background-color" : "rgba(255, 244, 194, 0.6)"});
+  $(box_id).parent().css({"opacity" : 0.6});
+  $(box_id).parent().css({"background-color" : "rgba(255, 244, 194, 0.5)"});
   $(box_id).css({"opacity" : 1});
 }
 
