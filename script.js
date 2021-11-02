@@ -125,7 +125,7 @@ function animateGrow(box_id) {
 }
 
 function animateShrink(box_id) {
-  $(box_id).animate({height: "150px"}, 400);
+  $(box_id).animate({height: "70px"}, 400);
 }
 
 function setBright(box_id) {
