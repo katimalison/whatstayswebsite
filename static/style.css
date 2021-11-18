@@ -265,6 +265,7 @@ iframe {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  overflow-y: visible;
 }
 
 .credits {
@@ -282,6 +283,6 @@ iframe {
 
 .credits-picture {
   margin: 20px;
-  width: 300px;
+  width: 250px;
   height: auto;
 }
