@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   $('.img-whatstays').click(
     function() {
-      window.open('https://soundcloud.com/kati-malison/sets/what-stays-single-contenders/s-r4TSPT2aRc5?si=1ac1f25e13014053b0ebec4c1246e61d', '_blank').focus();
+      // window.open('https://soundcloud.com/kati-malison/sets/what-stays-single-contenders/s-r4TSPT2aRc5?si=1ac1f25e13014053b0ebec4c1246e61d', '_blank').focus();
     }
   );
 
