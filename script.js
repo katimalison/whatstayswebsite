@@ -274,82 +274,82 @@ function allClosed() {
 }
 
 function toggleContent(content_id, box_id) {
-  if ($(content_id).is(":visible")) {
-    closeContent(content_id);
-      returnAll();
-      growAll();
-  } else {
-    if (closeAll()) {
-      $(content_id).show(500, function() {
-        shrinkAll();
-      });
-      // $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
-    } else {
-      growAll();
-      $(content_id).delay(500).show(500);
-      shrinkAll();
-      // $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
-    }
-    dimAllBut(box_id);
-    $(box_id).data('clicked', true)
-  }
+  // if ($(content_id).is(":visible")) {
+  //   closeContent(content_id);
+  //     returnAll();
+  //     growAll();
+  // } else {
+  //   if (closeAll()) {
+  //     $(content_id).show(500, function() {
+  //       shrinkAll();
+  //     });
+  //     // $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
+  //   } else {
+  //     growAll();
+  //     // $(content_id).delay(500).show(500);
+  //     shrinkAll();
+  //     // $(box_id).parent().css('background-color', "rgba(131,141,176,0.7)");
+  //   }
+  //   dimAllBut(box_id);
+  //   $(box_id).data('clicked', true)
+  // }
 
 }
 
-function aboutWhatStays() {
-  var content_id = "#aboutWhatStays";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
-
-function coverArt() {
-  var content_id = "#coverArt";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
-
-function credits() {
-  var content_id = "#credits";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
-
-function spotifyVisuals() {
-  var content_id = "#spotifyVisuals";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
-
-function listenWhatStays() {
-  var content_id = "#listenWhatStays";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
-
-function videoALight() {
-
-  // $('#videoALight-box').animate({opacity: 0}, 0).css("background-image", "url(image.jpeg)").animate({opacity: 1}, 2500);
-  var content_id = "#videoALight";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
-
-function videoMirrors() {
-  var content_id = "#videoMirrors";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
-
-function craterLake() {
-  var content_id = "#craterLake";
-  var box_id = content_id + "-box";
-
-  toggleContent(content_id, box_id);
-}
+// function aboutWhatStays() {
+//   var content_id = "#aboutWhatStays";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
+//
+// function coverArt() {
+//   var content_id = "#coverArt";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
+//
+// function credits() {
+//   var content_id = "#credits";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
+//
+// function spotifyVisuals() {
+//   var content_id = "#spotifyVisuals";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
+//
+// function listenWhatStays() {
+//   var content_id = "#listenWhatStays";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
+//
+// function videoALight() {
+//
+//   // $('#videoALight-box').animate({opacity: 0}, 0).css("background-image", "url(image.jpeg)").animate({opacity: 1}, 2500);
+//   var content_id = "#videoALight";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
+//
+// function videoMirrors() {
+//   var content_id = "#videoMirrors";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
+//
+// function craterLake() {
+//   var content_id = "#craterLake";
+//   var box_id = content_id + "-box";
+//
+//   toggleContent(content_id, box_id);
+// }
